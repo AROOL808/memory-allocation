@@ -33,13 +33,13 @@
             <div class="space-y-4">
                 <div>
                     <label for="memory" class="block text-gray-700 font-medium mb-2">Blok Memory (pisahkan dengan koma):</label>
-                    <input type="text" id="memory" placeholder="Contoh: 100, 500, 200, 300, 600" value="100, 500, 200, 300, 600"
+                    <input type="text" id="memory" placeholder="Contoh: 100, 500, 200, 300, 600" 
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
                 </div>
                 
                 <div>
                     <label for="processes" class="block text-gray-700 font-medium mb-2">Kebutuhan Memory Proses (pisahkan dengan koma):</label>
-                    <input type="text" id="processes" placeholder="Contoh: 212, 417, 112, 426" value="212, 417, 112, 426"
+                    <input type="text" id="processes" placeholder="Contoh: 212, 417, 112, 426" 
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
                 </div>
                 
@@ -550,8 +550,8 @@
         }
         
         function resetSimulation() {
-            document.getElementById("memory").value = "100, 500, 200, 300, 600";
-            document.getElementById("processes").value = "212, 417, 112, 426";
+            document.getElementById("memory").value = "";
+            document.getElementById("processes").value = "";
             
             // Reset result displays
             document.getElementById("firstFitResult").innerHTML = '<div class="text-gray-500 text-center py-8">Hasil simulasi akan ditampilkan di sini...</div>';
